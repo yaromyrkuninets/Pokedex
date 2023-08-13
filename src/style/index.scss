@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+@media (max-width: 576px) {
+    .main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

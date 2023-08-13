@@ -1,0 +1,203 @@
+.list {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    &__wrapper {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+    }
+
+    &__block {
+        width: 200px;
+        height: 200px;
+        border: black 3px solid;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__img {
+        width: 100px;
+        height: 100px;
+    }
+
+    &__name {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    &__types {
+        padding-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__type {
+        margin-right: 5px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 80px;
+        height: 25px;
+    }
+
+    &__btn {
+        margin-top: 40px;
+        width: 300px;
+        height: 40px;
+        background-color: rgba(0, 132, 255, 0.982);
+        color: #fff;
+        font-size: 25px;
+        font-weight: 600;
+        border-radius: 5px;
+        margin-bottom: 50px;
+    }
+
+    &__type-filter {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 200px;
+        height: 40px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+.green {
+    background-color: green;
+    color: white;
+}
+
+.red {
+    background-color: red;
+    color: white;
+}
+
+.purple {
+    background-color: purple;
+    color: white;
+}
+
+.yellow {
+    background-color: yellow;
+    color: black;
+}
+
+.gray {
+    background-color: gray;
+    color: #fff;
+}
+
+.maroon {
+    background-color: maroon;
+    color: white;
+}
+
+.blue {
+    background-color: blue;
+    color: white;
+}
+
+.saddlebrown {
+    background-color: saddlebrown;
+    color: white;
+}
+
+.dimgray {
+    background-color: dimgray;
+    color: white;
+}
+
+.olive {
+    background-color: olive;
+    color: white;
+}
+
+.indigo {
+    background-color: indigo;
+    color: white;
+}
+
+.lightsteelblue {
+    background-color: lightsteelblue;
+    color: black;
+}
+
+.blue {
+    background-color: blue;
+    color: white;
+}
+
+.pink {
+    background-color: pink;
+    color: black;
+}
+
+.aliceblue {
+    background-color: aliceblue;
+    color: black;
+}
+
+.darkviolet {
+    background-color: darkviolet;
+    color: white;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.lightpink {
+    background-color: lightpink;
+    color: black;
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+    .list {
+        &__wrapper {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 30px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .list {
+        &__wrapper {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 30px;
+        }
+
+        &__btn {
+            width: 200px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+
+}
+
+@media (max-width: 375px) {
+
+}

@@ -1,0 +1,87 @@
+.details {
+    margin-top: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__block {
+        position: relative;
+        padding: 10px 10px 30px 10px;
+        border: black 3px solid;
+        width: 300px;
+        height: 570px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__img {
+        width: 200px;
+        height: 200px;
+    }
+
+    &__btn {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+}
+
+.attributes__table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 16px;
+}
+
+.attributes__table td {
+    padding: 5px;
+    border: 2px solid black;
+}
+
+.attribute__name {
+    font-weight: bold;
+    text-align: center;
+}
+
+.attribute__value {
+    text-align: right;
+    text-align: center;
+}
+
+/* В файлі стилів (наприклад, style.css) */
+.red-cross {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.red-cross::before,
+.red-cross::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background-color: red;
+    transform: translate(-50%, -50%);
+}
+
+.red-cross::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.red-cross::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+@media (max-width: 576px) {
+    .details {
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+}
